@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // --- Brain & Robot Audio Logic ---
+  // The user clicked from the navbar, so browsers typically allow this cross-page autoplay.
+  // Play exactly 1 second after load (which equates to ~1 sec after click depending on load time)
+  const brainAudio = new Audio('assets/videos/brain-voice.mp3');
+  const robotAudio = new Audio('assets/videos/robot-voice.mp3');
+
+  setTimeout(() => {
+    // Play both audio files
+    const p1 = brainAudio.play();
+    const p2 = robotAudio.play();
+    
+    Promise.all([p1, p2]).catch(err => {
+      console.log("Audio play blocked on portfolio:", err);
+      
+      // Fallback: unlock on next interaction if blocked
+      const unlockAudio = () => {
+        brainAudio.play().catch(e => {});
+        robotAudio.play().catch(e => {});
+        ['mousemove', 'click', 'scroll', 'touchstart', 'keydown'].forEach(evt => {
+          window.removeEventListener(evt, unlockAudio);
+        });
+      };
+      ['mousemove', 'click', 'scroll', 'touchstart', 'keydown'].forEach(evt => {
+        window.addEventListener(evt, unlockAudio);
+      });
+    });
+  }, 1000);
+  // -------------------------
+
   // --- SCROLL LOCK LOGIC FOR INTRO ---
   const originalOverflow = document.body.style.overflow;
   document.body.style.overflow = 'hidden';
