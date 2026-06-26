@@ -175,6 +175,11 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Play any video inside the revealed element
+            const video = entry.target.querySelector('video');
+            if (video && typeof video.play === 'function') {
+              video.play().catch(e => console.log("Video lazy play blocked:", e));
+            }
             observer.unobserve(entry.target);
           }
         });
