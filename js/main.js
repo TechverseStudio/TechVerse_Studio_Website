@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const WHATSAPP_NUMBER = '919876543210';
+  const WHATSAPP_NUMBER = '918788738694';
   const WHATSAPP_MESSAGE = encodeURIComponent(
     'Hi TechVerse Studio! I would like to discuss a digital project.'
   );
