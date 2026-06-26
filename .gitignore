@@ -1,0 +1,16 @@
+# IDEs and Editors
+.vscode/
+.idea/
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp
+
+# Node (just in case they add a package.json later)
+node_modules/
+npm-debug.log
+
+# Environment variables
+.env
+.env.local

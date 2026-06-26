@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechVerse Studio student projects. Innovative digital solutions built for campus fests, academic requirements, and student startups.">
+  <title>Student Projects | TechVerse Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+  <!-- Global SVG Defs -->
+  <svg width="0" height="0" style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+    <defs>
+      <linearGradient id="neon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00BFFF"/>
+        <stop offset="50%" stop-color="#8A2EFF"/>
+        <stop offset="100%" stop-color="#FF3CF7"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="navbar scrolled" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><div class="logo-icon"><img src="assets/logo.png" alt="TechVerse Studio logo"></div><span>TechVerse Studio</span></a>
+      <nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="students.html" class="active">Students</a><a href="process.html">Process</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></nav>
+      <div class="nav-actions"><a href="contact.html" class="btn btn-primary btn-sm nav-cta">Start Your Project</a><button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button></div>
+    </div>
+    <nav class="mobile-menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="students.html" class="active">Students</a><a href="process.html">Process</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="contact.html" class="btn btn-primary" style="margin-top:1rem;text-align:center;">Start Your Project</a></nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="section-label">Empowering The Next Generation</span>
+        <h1>Student <span class="gradient-text">Projects</span></h1>
+        <p>Innovative digital solutions built for campus fests, academic requirements, and student startups. We transform visionary student ideas into production-ready platforms with cutting-edge design, scalable architecture, and a focus on seamless user experience. From award-winning hackathon applications to massive college-wide event portals, we help you build the future.</p>
+      </div>
+    </section>
+
+    <!-- Student Projects (Bento Box) -->
+    <section class="section" id="student-projects">
+      <div class="container">
+
+        <div class="accordion-wrapper" style="max-width: 1000px; margin: 0 auto;">
+          
+          <!-- Project 1: AI Study Assistant -->
+          <div class="project-accordion">
+            <button class="project-accordion-header" onclick="toggleAccordion(this)">
+              <span class="project-accordion-title">🤖 Nova AI Study Assistant</span>
+              <span class="project-accordion-icon">+</span>
+            </button>
+            <div class="project-accordion-content">
+              <div class="service-row" style="margin: 2rem 0;">
+                <div class="service-content">
+                  <h3 class="service-title">Nova AI Study Assistant</h3>
+                  <p class="service-desc">A machine-learning powered app that automatically generates flashcards and quizzes from uploaded college lecture notes.</p>
+                  <ul class="service-list">
+                    <li>Automated Flashcard Generation</li>
+                    <li>Upload PDF & PPT Notes</li>
+                    <li>Spaced Repetition System</li>
+                    <li>Built for Hackathon Winner</li>
+                  </ul>
+                  <div style="margin-top:2rem;">
+                     <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+                  </div>
+                </div>
+                <div class="service-visual" style="--glow-color: rgba(0, 191, 255, 0.5)">
+                  <div class="service-image-wrapper">
+                    <img src="assets/images/student-project-1.png" class="service-image" alt="AI App Mockup" style="object-fit:cover; border-radius:12px; width:100%; height:100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: TechSymposium -->
+          <div class="project-accordion">
+            <button class="project-accordion-header" onclick="toggleAccordion(this)">
+              <span class="project-accordion-title">🌐 TechSymposium '25</span>
+              <span class="project-accordion-icon">+</span>
+            </button>
+            <div class="project-accordion-content">
+              <div class="service-row reverse" style="margin: 2rem 0;">
+                <div class="service-visual" style="--glow-color: rgba(138, 46, 255, 0.5)">
+                  <div class="service-image-wrapper">
+                    <img src="assets/images/student-project-2.png" class="service-image" alt="Web Portal Mockup" style="object-fit:cover; border-radius:12px; width:100%; height:100%;">
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">TechSymposium '25</h3>
+                  <p class="service-desc">End-to-end event registration and ticketing platform built for a national-level college tech fest with over 5,000 attendees.</p>
+                  <ul class="service-list">
+                    <li>QR Code Ticketing</li>
+                    <li>Live Leaderboards</li>
+                    <li>Payment Gateway Integration</li>
+                    <li>Campus Portal Platform</li>
+                  </ul>
+                  <div style="margin-top:2rem;">
+                     <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Smart Dorm IoT -->
+          <div class="project-accordion">
+            <button class="project-accordion-header" onclick="toggleAccordion(this)">
+              <span class="project-accordion-title">💡 Smart Dorm IoT Dashboard</span>
+              <span class="project-accordion-icon">+</span>
+            </button>
+            <div class="project-accordion-content">
+              <div class="service-row" style="margin: 2rem 0;">
+                <div class="service-content">
+                  <h3 class="service-title">Smart Dorm IoT Dashboard</h3>
+                  <p class="service-desc">Real-time energy tracking and automation dashboard for university hostel management. Built as an award-winning final year engineering project.</p>
+                  <ul class="service-list">
+                    <li>Live Energy Monitoring</li>
+                    <li>Automated Light Scheduling</li>
+                    <li>Hardware Sensor Integration</li>
+                    <li>Final Year Project Grade A+</li>
+                  </ul>
+                  <div style="margin-top:2rem;">
+                     <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+                  </div>
+                </div>
+                <div class="service-visual" style="--glow-color: rgba(255, 60, 247, 0.5)">
+                  <div class="service-image-wrapper">
+                    <img src="assets/images/student-project-3.png" class="service-image" alt="IoT Dashboard Mockup" style="object-fit:cover; border-radius:12px; width:100%; height:100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: PeerLearn Network -->
+          <div class="project-accordion">
+            <button class="project-accordion-header" onclick="toggleAccordion(this)">
+              <span class="project-accordion-title">📱 PeerLearn Network</span>
+              <span class="project-accordion-icon">+</span>
+            </button>
+            <div class="project-accordion-content">
+              <div class="service-row reverse" style="margin: 2rem 0;">
+                <div class="service-visual" style="--glow-color: rgba(0, 191, 255, 0.5)">
+                  <div class="service-image-wrapper">
+                    <img src="assets/images/student-project-4.png" class="service-image" alt="Mobile App Mockup" style="object-fit:cover; border-radius:12px; width:100%; height:100%;">
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">PeerLearn Network</h3>
+                  <p class="service-desc">A cross-platform mobile app connecting engineering students across different colleges for collaborative study sessions and resource sharing.</p>
+                  <ul class="service-list">
+                    <li>Real-time Chat & Voice</li>
+                    <li>Cross-Campus Matchmaking</li>
+                    <li>Resource Library</li>
+                    <li>EdTech Startup MVP</li>
+                  </ul>
+                  <div style="margin-top:2rem;">
+                     <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- Pricing Section -->
+    <section class="section" id="student-pricing">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Transparent Pricing</span>
+          <h2 class="section-title">Investment <span class="gradient-text">Plans</span></h2>
+          <p class="section-desc">Choose the perfect package for your student project or startup MVP.</p>
+        </header>
+
+        <div class="pricing-grid reveal">
+          <!-- Package 1 -->
+          <div class="pricing-card glass-card">
+            <h3 class="pricing-title">Codebase Only</h3>
+            <p class="pricing-desc">Perfect for students who just need the raw source code.</p>
+            <div class="pricing-price-container">
+              <button class="btn btn-secondary price-reveal-btn" onclick="revealPrice(this, '₹2,000')">Reveal Price 🔒</button>
+            </div>
+            <ul class="pricing-features">
+              <li>Full Source Code (GitHub/ZIP)</li>
+              <li>Basic Setup Instructions</li>
+              <li class="disabled">Live Global Hosting</li>
+              <li class="disabled">1-on-1 Guidance</li>
+            </ul>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="pricing-card glass-card">
+            <h3 class="pricing-title">Live Deployment</h3>
+            <p class="pricing-desc">Get your project live on the internet with full documentation.</p>
+            <div class="pricing-price-container">
+              <button class="btn btn-secondary price-reveal-btn" onclick="revealPrice(this, '₹2,500')">Reveal Price 🔒</button>
+            </div>
+            <ul class="pricing-features">
+              <li>Custom Project Build</li>
+              <li>Full Source Code (GitHub/ZIP)</li>
+              <li>Detailed Documentation</li>
+              <li>Live Global Hosting</li>
+              <li class="disabled">1-on-1 Guidance</li>
+            </ul>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="pricing-card glass-card premium-card">
+            <div class="pricing-badge">Recommended</div>
+            <h3 class="pricing-title">Complete Mentorship</h3>
+            <p class="pricing-desc">Everything you need, plus personal guidance and project walkthrough.</p>
+            <div class="pricing-price-container">
+              <button class="btn btn-primary price-reveal-btn" onclick="revealPrice(this, '₹3,200')">Reveal Price 🔒</button>
+            </div>
+            <ul class="pricing-features">
+              <li>Custom Project Build</li>
+              <li>Full Source Code (GitHub/ZIP)</li>
+              <li>Detailed Documentation</li>
+              <li>Live Global Hosting</li>
+              <li>1-on-1 Guidance & Setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" style="background:var(--bg-secondary);" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Start Your <span class="gradient-text">Project</span></h2>
+          <p class="section-desc">Tell us about your vision. We'll respond within 24 hours with a custom proposal.</p>
+        </header>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p style="color:var(--text-secondary);">Reach out via form, WhatsApp, or email. We're excited to hear about your project.</p>
+            <div class="contact-methods">
+              <a href="#" data-whatsapp class="contact-method">
+                <span class="icon" aria-hidden="true">💬</span>
+                <div><strong>WhatsApp</strong><br><span style="color:var(--text-muted);font-size:0.875rem;">Chat with us instantly</span></div>
+              </a>
+              <a href="mailto:tvs.techverse.studio@gmail.com" class="contact-method">
+                <span class="icon" aria-hidden="true">✉️</span>
+                <div><strong>Email</strong><br><span style="color:var(--text-muted);font-size:0.875rem;">tvs.techverse.studio@gmail.com</span></div>
+              </a>
+            </div>
+          </div>
+          <form class="glass-card contact-form" id="contact-form" novalidate>
+            <input type="hidden" name="_subject" value="New Submission from TechVerse Studio">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-success" role="alert">Thank you! Your message has been prepared. We'll be in touch soon.</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="John Doe">
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="john@example.com">
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+91 98765 43210">
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="project">Project Type *</label>
+                <select id="project" name="project" required>
+                  <option value="">Select a service</option>
+                  <option value="web">Web Development</option>
+                  <option value="app">Mobile App</option>
+                  <option value="ai">AI Solutions</option>
+                  <option value="student">Student Project</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea id="message" name="message" required rows="4" placeholder="Tell us about your project goals and requirements..."></textarea>
+              <span class="form-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><div class="logo-icon"><img src="assets/logo.png" alt="TechVerse Studio logo"></div><span>TechVerse Studio</span></a>
+          <p>We transform complex problems into elegant digital solutions through innovative engineering and design.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="students.html">Student Projects</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:tvs.techverse.studio@gmail.com">tvs.techverse.studio@gmail.com</a></li>
+            <li><a href="#" data-whatsapp>WhatsApp Us</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechVerse Studio. All rights reserved.</p>
+        <p>Where Ideas Become Real-World Solutions.</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="whatsapp-float" data-whatsapp aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="js/main.js">
+    function revealPrice(button, price) {
+      const container = button.parentElement;
+      container.innerHTML = `<span class="revealed-price gradient-text">${price}</span>`;
+    }
+  </script>
+
+  <script>
+    function toggleAccordion(button) {
+      const accordion = button.parentElement;
+      const content = accordion.querySelector('.project-accordion-content');
+      const icon = button.querySelector('.project-accordion-icon');
+      
+      // Close all other accordions
+      document.querySelectorAll('.project-accordion').forEach(item => {
+        if (item !== accordion) {
+          item.classList.remove('active');
+          item.querySelector('.project-accordion-content').style.maxHeight = null;
+          item.querySelector('.project-accordion-icon').style.transform = 'rotate(0deg)';
+        }
+      });
+      
+      // Toggle current
+      if (accordion.classList.contains('active')) {
+        accordion.classList.remove('active');
+        content.style.maxHeight = null;
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        accordion.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.style.transform = 'rotate(45deg)';
+      }
+    }
+  
+    function revealPrice(button, price) {
+      const container = button.parentElement;
+      container.innerHTML = `<span class="revealed-price gradient-text">${price}</span>`;
+    }
+  </script>
+</body>
+
+</html>

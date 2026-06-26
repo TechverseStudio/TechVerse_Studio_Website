@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechVerse Studio — Premium digital solutions: web development, mobile apps, AI, automation, branding, and marketing. Where ideas become real-world solutions.">
+  <meta name="keywords" content="web development, mobile apps, AI solutions, digital marketing, TechVerse Studio">
+  <meta name="author" content="TechVerse Studio">
+  <title>TechVerse Studio | Where Ideas Become Real-World Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+  <!-- Global SVG Defs for 3D Objects -->
+  <svg width="0" height="0" style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+    <defs>
+      <linearGradient id="neon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00BFFF"/>
+        <stop offset="50%" stop-color="#8A2EFF"/>
+        <stop offset="100%" stop-color="#FF3CF7"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  
+
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="TechVerse Studio Home">
+        <div class="logo-icon" aria-hidden="true">
+          <img src="assets/logo.png" alt="TechVerse Studio logo">
+        </div>
+        <span>TechVerse Studio</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a><a href="students.html">Students</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Start Your Project</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a><a href="students.html">Students</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:1rem;text-align:center;">Start Your Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 id="hero-heading">We Build Digital Solutions That <span class="gradient-text">Drive Results</span></h1>
+            <p>From startups and businesses to schools, colleges, and institutes — we craft websites, apps, AI systems, automation, branding, and marketing that help you grow faster and smarter.</p>
+            <div class="btn-group">
+              <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+              <a href="services.html" class="btn btn-secondary">View Services</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="robot-container">
+                <div class="robot-ambient-glow"></div>
+                  <video class="robot-video" src="assets/videos/robot-new.webm" autoplay loop muted playsinline aria-label="3D Robot"></video>
+              </div>
+              <div class="video-caption">
+                <span class="typewriter-text" id="robot-caption-text">Welcome To TechVerse Studio</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Trusted By / Social Proof -->
+    <!-- Stats Bar (Moved from Hero) -->
+    <section class="section stats-section" style="padding-top: 4rem; padding-bottom: 0;">
+      <div class="container">
+            <div class="stats-bar reveal">
+              <div class="stat-item">
+                <div class="stat-number" data-count="150" data-suffix="+">0</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="120" data-suffix="+">0</div>
+                <div class="stat-label">Clients Served</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="200" data-suffix="+">0</div>
+                <div class="stat-label">Solutions Delivered</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="98" data-suffix="%">0</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="logo-marquee-section" aria-labelledby="trusted-by">
+      <div class="container" style="text-align: center; margin-bottom: 2rem;">
+        <span class="section-label" id="trusted-by" style="margin-bottom:0;">Trusted by Industry Leaders & Innovators</span>
+      </div>
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- Logo set 1 -->
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg" alt="TCS" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          
+          <!-- Logo set 2 (Duplicate for infinite scroll) -->
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+          <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg" alt="TCS" style="filter: brightness(0) invert(1) opacity(0.5);"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" id="why-us" style="background:var(--bg-secondary);">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">The TechVerse Advantage</span>
+          <h2 class="section-title">Why Industry Leaders <span class="gradient-text">Choose Us</span></h2>
+          <p class="section-desc">We don't just build software. We engineer scalable digital ecosystems designed to accelerate your growth.</p>
+        </header>
+        
+        <div class="why-us-grid reveal">
+          <div class="glass-card feature-card">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3>Data-Driven Strategy</h3>
+            <p>Every decision is backed by analytics and user behavior data, ensuring maximum ROI and conversion rates.</p>
+          </div>
+          <div class="glass-card feature-card">
+            <div class="feature-icon" aria-hidden="true">🏆</div>
+            <h3>Award-Winning UI/UX</h3>
+            <p>We blend breathtaking aesthetics with intuitive user psychology to create digital experiences that captivate and convert.</p>
+          </div>
+          <div class="glass-card feature-card">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>Agile Rapid Delivery</h3>
+            <p>Our streamlined sprint methodology guarantees transparent milestones and rapid deployment without compromising quality.</p>
+          </div>
+          <div class="glass-card feature-card">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3>Enterprise Scalability</h3>
+            <p>Built on modern, secure cloud architectures designed to scale effortlessly as your user base grows from hundreds to millions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section" id="services-preview">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Our Capabilities</span>
+          <h2 class="section-title">End-to-End <span class="gradient-text">Engineering</span></h2>
+          <p class="section-desc">Comprehensive digital solutions tailored to solve your most complex business challenges.</p>
+        </header>
+        
+        <div class="services-preview-grid reveal">
+          <a href="services.html" class="service-preview-card">
+            <div class="service-preview-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>High-performance, SEO-optimized web applications.</p>
+            <span class="service-link">Learn More &rarr;</span>
+          </a>
+          <a href="services.html" class="service-preview-card">
+            <div class="service-preview-icon">📱</div>
+            <h3>Mobile Apps</h3>
+            <p>Native & cross-platform iOS and Android applications.</p>
+            <span class="service-link">Learn More &rarr;</span>
+          </a>
+          <a href="services.html" class="service-preview-card">
+            <div class="service-preview-icon">🤖</div>
+            <h3>AI Solutions</h3>
+            <p>Custom machine learning models and AI integrations.</p>
+            <span class="service-link">Learn More &rarr;</span>
+          </a>
+        </div>
+        
+        <div class="text-center reveal" style="margin-top: 3rem;">
+          <a href="services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials" style="background:var(--bg-secondary); overflow: hidden;">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Client Success</span>
+          <h2 class="section-title">Don't Just Take <span class="gradient-text">Our Word For It</span></h2>
+        </header>
+
+        <div class="testimonial-slider-container reveal">
+          <div class="testimonial-track">
+            <!-- Testimonial 1 -->
+            <div class="glass-card testimonial-card">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">TechVerse didn't just build us a website; they completely overhauled our digital strategy. Our inbound lead generation has increased by 150% since launch.</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" alt="Sarah Jenkins">
+                <div>
+                  <strong>Sarah Jenkins</strong>
+                  <span>CMO, Meridian Corp</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="glass-card testimonial-card">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">The AI automation pipeline they engineered saved our customer support team over 40 hours a week. Truly world-class engineering and communication.</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="David Chen">
+                <div>
+                  <strong>David Chen</strong>
+                  <span>Founder, NexusTech</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="glass-card testimonial-card">
+              <div class="quote-icon">"</div>
+              <p class="testimonial-text">From wireframes to final deployment, the TechVerse team was flawless. The mobile app they built is currently maintaining a 4.9 star rating on the App Store.</p>
+              <div class="testimonial-author">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" alt="Elena Rodriguez">
+                <div>
+                  <strong>Elena Rodriguez</strong>
+                  <span>VP Product, FitTrack Pro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+        <!-- Contact -->
+    <section class="section" id="contact" style="background:var(--bg-secondary);" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Start Your <span class="gradient-text">Project</span></h2>
+          <p class="section-desc">Tell us about your vision. We'll respond within 24 hours with a custom proposal.</p>
+        </header>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p style="color:var(--text-secondary);">Reach out via form, WhatsApp, or email. We're excited to hear about your project.</p>
+            <div class="contact-methods">
+              <a href="#" data-whatsapp class="contact-method">
+                <span class="icon" aria-hidden="true">💬</span>
+                <div><strong>WhatsApp</strong><br><span style="color:var(--text-muted);font-size:0.875rem;">Chat with us instantly</span></div>
+              </a>
+              <a href="mailto:tvs.techverse.studio@gmail.com" class="contact-method">
+                <span class="icon" aria-hidden="true">✉️</span>
+                <div><strong>Email</strong><br><span style="color:var(--text-muted);font-size:0.875rem;">tvs.techverse.studio@gmail.com</span></div>
+              </a>
+              <a href="https://www.instagram.com/techverse.studio?igsh=OHdoYjA3OWU3Mjho" target="_blank" rel="noopener noreferrer" class="contact-method">
+                <span class="icon" aria-hidden="true">📸</span>
+                <div><strong>Instagram</strong><br><span style="color:var(--text-muted);font-size:0.875rem;">@techverse.studio</span></div>
+              </a>
+            </div>
+            <a href="#" data-whatsapp class="btn btn-primary">Book a Free Consultation</a>
+          </div>
+          <form class="glass-card contact-form" id="contact-form" novalidate>
+            <input type="hidden" name="_subject" value="New Submission from TechVerse Studio">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-success" role="alert">Thank you! Your message has been prepared. We'll be in touch soon.</div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="John Doe">
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="john@example.com">
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+91 98765 43210">
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="project">Project Type *</label>
+                <select id="project" name="project" required>
+                  <option value="">Select a service</option>
+                  <option value="web">Web Development</option>
+                  <option value="app">Mobile App</option>
+                  <option value="ai">AI Solutions</option>
+                  <option value="automation">Automation</option>
+                  <option value="branding">Branding & Design</option>
+                  <option value="marketing">Digital Marketing</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range *</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select budget</option>
+                <option value="under-500">Under $500</option>
+                <option value="500-2500">$500 – $2,500</option>
+                <option value="2500-10000">$2,500 – $10,000</option>
+                <option value="10000+">$10,000+</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project goals..."></textarea>
+              <span class="form-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon" aria-hidden="true"><img src="assets/logo.png" alt="TechVerse Studio logo"></div>
+            <span>TechVerse Studio</span>
+          </a>
+          <p>We build digital solutions that drive results. Premium web, mobile, AI, and marketing services for ambitious brands.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/techverse.studio?igsh=OHdoYjA3OWU3Mjho" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+            <a href="#" data-whatsapp aria-label="WhatsApp">💬</a>
+            <a href="mailto:tvs.techverse.studio@gmail.com" aria-label="Email">✉️</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a><a href="students.html">Students</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">AI Solutions</a></li>
+            <li><a href="services.html">Automation</a></li>
+            <li><a href="services.html">Branding</a></li>
+            <li><a href="services.html">Digital Marketing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:tvs.techverse.studio@gmail.com">tvs.techverse.studio@gmail.com</a></li>
+            <li><a href="#" data-whatsapp>WhatsApp Us</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+            <li><a href="contact.html">Book Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechVerse Studio. All rights reserved.</p>
+        <p>Where Ideas Become Real-World Solutions.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" data-whatsapp aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
