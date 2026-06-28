@@ -3136,42 +3136,40 @@ ul { list-style: none; }
   fill: white;
 }
 
-/* Text-based Logos for Marquee */
-.text-logo {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.4);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  white-space: nowrap;
-  display: inline-block;
-  padding: 0 2rem;
-  transition: color 0.3s ease;
-}
-.marquee-item:hover .text-logo {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 /* Client Logo Flex Container */
 .client-logo {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 0 1rem;
+  gap: 1.25rem;
+  padding: 0 1.5rem;
 }
 .client-logo img {
-  height: 40px;
-  width: 40px;
-  border-radius: 8px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   object-fit: cover;
-  transition: all 0.3s ease;
-  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: grayscale(80%) opacity(0.7);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.text-logo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 .marquee-item:hover .client-logo img {
   filter: grayscale(0%) opacity(1);
-  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+  transform: scale(1.15) rotate(5deg);
 }
-.text-logo {
-  padding: 0 !important;
+.marquee-item:hover .text-logo {
+  color: rgba(255, 255, 255, 1);
 }
