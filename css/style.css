@@ -3135,3 +3135,20 @@ ul { list-style: none; }
 .linkedin-hover-overlay svg {
   fill: white;
 }
+
+/* Text-based Logos for Marquee */
+.text-logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 2rem;
+  transition: color 0.3s ease;
+}
+.marquee-item:hover .text-logo {
+  color: rgba(255, 255, 255, 0.8);
+}
