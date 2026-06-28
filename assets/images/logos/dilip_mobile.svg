@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="gradD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 15)">
+    <!-- Smartphone -->
+    <rect x="10" y="0" width="24" height="46" rx="4" fill="none" stroke="url(#gradD)" stroke-width="3"/>
+    <circle cx="22" cy="40" r="2" fill="#00F2FE"/>
+    <!-- Signal -->
+    <path d="M 40 15 Q 45 10, 50 15" fill="none" stroke="#4FACFE" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 38 7 Q 45 0, 52 7" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="75" y="45" font-family="'Roboto', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="1">DILIP</text>
+  <text x="145" y="45" font-family="'Roboto', sans-serif" font-size="22" font-weight="300" fill="#00F2FE" letter-spacing="1">MOBILE STORES</text>
+</svg>
