@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" width="220" height="80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
   <defs>
     <linearGradient id="gradC" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF8C00" />
       <stop offset="100%" stop-color="#FF3D00" />
     </linearGradient>
   </defs>
-  <g transform="translate(10, 15)">
+  <g transform="translate(15, 20)">
     <!-- Coffee Cup Outline -->
-    <path d="M 5 10 Q 5 45, 25 45 Q 45 45, 45 10 Z" fill="none" stroke="url(#gradC)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 6 14 Q 6 60, 34 60 Q 60 60, 60 14 Z" fill="none" stroke="url(#gradC)" stroke-width="5" stroke-linecap="round"/>
     <!-- Handle -->
-    <path d="M 45 15 Q 55 15, 55 25 Q 55 35, 45 35" fill="none" stroke="url(#gradC)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 60 20 Q 74 20, 74 34 Q 74 48, 60 48" fill="none" stroke="url(#gradC)" stroke-width="4" stroke-linecap="round"/>
     <!-- Steam -->
-    <path d="M 20 0 Q 25 -5, 20 -10" fill="none" stroke="#FF8C00" stroke-width="2" stroke-linecap="round"/>
-    <path d="M 30 2 Q 35 -3, 30 -8" fill="none" stroke="#FF3D00" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 28 0 Q 35 -7, 28 -14" fill="none" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 42 4 Q 49 -3, 42 -10" fill="none" stroke="#FF3D00" stroke-width="3" stroke-linecap="round"/>
   </g>
-  <text x="75" y="45" font-family="'Playfair Display', serif, sans-serif" font-size="34" font-weight="700" fill="#FF8C00" letter-spacing="1.5">Cafe</text>
-  <text x="140" y="45" font-family="'Playfair Display', serif, sans-serif" font-size="34" font-weight="400" fill="#FFFFFF" letter-spacing="1.5">Brew</text>
+  <text x="105" y="60" font-family="'Playfair Display', serif, sans-serif" font-size="44" font-weight="800" fill="#FF8C00" letter-spacing="2">Cafe</text>
+  <text x="205" y="60" font-family="'Playfair Display', serif, sans-serif" font-size="44" font-weight="500" fill="#FFFFFF" letter-spacing="2">Brew</text>
 </svg>

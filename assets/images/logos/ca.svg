@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 80" width="180" height="80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
   <defs>
     <linearGradient id="gradCA" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFD700" />
       <stop offset="100%" stop-color="#DAA520" />
     </linearGradient>
   </defs>
-  <g transform="translate(10, 15)">
+  <g transform="translate(15, 20)">
     <!-- Shield -->
-    <path d="M 20 0 L 40 10 L 40 30 Q 20 50, 0 30 L 0 10 Z" fill="none" stroke="url(#gradCA)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 26 0 L 52 14 L 52 40 Q 26 66, 0 40 L 0 14 Z" fill="none" stroke="url(#gradCA)" stroke-width="4" stroke-linejoin="round"/>
     <!-- Chart -->
-    <polyline points="10,35 15,25 25,30 30,15" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="14,46 20,34 32,40 40,20" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <text x="60" y="45" font-family="'Georgia', serif" font-size="32" font-weight="700" fill="#FFD700" letter-spacing="2">CA</text>
-  <text x="105" y="45" font-family="'Georgia', serif" font-size="32" font-weight="300" fill="#E0E0E0" letter-spacing="2">FIRMS</text>
+  <text x="85" y="60" font-family="'Georgia', serif" font-size="40" font-weight="800" fill="#FFD700" letter-spacing="2.5">CA</text>
+  <text x="155" y="60" font-family="'Georgia', serif" font-size="40" font-weight="400" fill="#E0E0E0" letter-spacing="2.5">FIRMS</text>
 </svg>
