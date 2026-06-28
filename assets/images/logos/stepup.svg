@@ -13,6 +13,6 @@
     <!-- Arrow -->
     <path d="M 42 0 L 52 10 L 42 20 Z" fill="#00BFFF"/>
   </g>
-  <text x="75" y="48" font-family="'Montserrat', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">STEPUP</text>
-  <text x="180" y="48" font-family="'Montserrat', sans-serif" font-size="24" font-weight="400" fill="#00BFFF" letter-spacing="0.5">SOLUTIONS</text>
+  <text x="75" y="48" font-family="'Montserrat', sans-serif" font-size="32" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">STEPUP</text>
+  <text x="180" y="48" font-family="'Montserrat', sans-serif" font-size="32" font-weight="400" fill="#00BFFF" letter-spacing="0.5">SOLUTIONS</text>
 </svg>

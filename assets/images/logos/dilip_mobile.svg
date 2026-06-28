@@ -13,6 +13,6 @@
     <path d="M 40 15 Q 45 10, 50 15" fill="none" stroke="#4FACFE" stroke-width="2" stroke-linecap="round"/>
     <path d="M 38 7 Q 45 0, 52 7" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round"/>
   </g>
-  <text x="75" y="45" font-family="'Roboto', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="1">DILIP</text>
-  <text x="145" y="45" font-family="'Roboto', sans-serif" font-size="22" font-weight="300" fill="#00F2FE" letter-spacing="1">MOBILE STORES</text>
+  <text x="75" y="45" font-family="'Roboto', sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="1">DILIP</text>
+  <text x="145" y="45" font-family="'Roboto', sans-serif" font-size="30" font-weight="300" fill="#00F2FE" letter-spacing="1">MOBILE STORES</text>
 </svg>

@@ -12,6 +12,6 @@
     <!-- Leaf -->
     <path d="M 28 5 C 45 5, 45 25, 28 25 C 20 25, 20 5, 28 5 Z" fill="#92FE9D" opacity="0.8"/>
   </g>
-  <text x="65" y="48" font-family="'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#E0E0E0" letter-spacing="1">Sanjeevani</text>
-  <text x="210" y="48" font-family="'Inter', 'Segoe UI', sans-serif" font-size="22" font-weight="300" fill="#A0A0A0" letter-spacing="1">Hospital</text>
+  <text x="65" y="48" font-family="'Inter', 'Segoe UI', sans-serif" font-size="30" font-weight="700" fill="#E0E0E0" letter-spacing="1">Sanjeevani</text>
+  <text x="210" y="48" font-family="'Inter', 'Segoe UI', sans-serif" font-size="30" font-weight="300" fill="#A0A0A0" letter-spacing="1">Hospital</text>
 </svg>

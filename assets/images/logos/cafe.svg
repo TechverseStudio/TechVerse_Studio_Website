@@ -14,6 +14,6 @@
     <path d="M 20 0 Q 25 -5, 20 -10" fill="none" stroke="#FF8C00" stroke-width="2" stroke-linecap="round"/>
     <path d="M 30 2 Q 35 -3, 30 -8" fill="none" stroke="#FF3D00" stroke-width="2" stroke-linecap="round"/>
   </g>
-  <text x="75" y="45" font-family="'Playfair Display', serif, sans-serif" font-size="26" font-weight="700" fill="#FF8C00" letter-spacing="1.5">Cafe</text>
-  <text x="140" y="45" font-family="'Playfair Display', serif, sans-serif" font-size="26" font-weight="400" fill="#FFFFFF" letter-spacing="1.5">Brew</text>
+  <text x="75" y="45" font-family="'Playfair Display', serif, sans-serif" font-size="34" font-weight="700" fill="#FF8C00" letter-spacing="1.5">Cafe</text>
+  <text x="140" y="45" font-family="'Playfair Display', serif, sans-serif" font-size="34" font-weight="400" fill="#FFFFFF" letter-spacing="1.5">Brew</text>
 </svg>
