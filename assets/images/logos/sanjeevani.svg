@@ -1,17 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="450" height="100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 120" width="350" height="120">
   <defs>
     <linearGradient id="gradS" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00C9FF" />
       <stop offset="100%" stop-color="#92FE9D" />
     </linearGradient>
   </defs>
-  <g transform="translate(15, 20)">
-    <!-- Medical Cross -->
+  <g transform="translate(10, 20) scale(1.4)">
     <rect x="20" y="0" width="16" height="56" rx="4" fill="url(#gradS)" opacity="0.9"/>
     <rect x="0" y="20" width="56" height="16" rx="4" fill="url(#gradS)" opacity="0.9"/>
-    <!-- Leaf -->
     <path d="M 38 6 C 60 6, 60 33, 38 33 C 27 33, 27 6, 38 6 Z" fill="#92FE9D" opacity="0.8"/>
   </g>
-  <text x="90" y="60" font-family="'Inter', 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#E0E0E0" letter-spacing="1.5">Sanjeevani</text>
-  <text x="300" y="60" font-family="'Inter', 'Segoe UI', sans-serif" font-size="38" font-weight="400" fill="#A0A0A0" letter-spacing="1">Hospital</text>
+  <text x="110" y="55" font-family="'Inter', 'Segoe UI', sans-serif" font-size="46" font-weight="900" fill="#E0E0E0" letter-spacing="1">Sanjeevani</text>
+  <text x="110" y="105" font-family="'Inter', 'Segoe UI', sans-serif" font-size="46" font-weight="300" fill="#A0A0A0" letter-spacing="1">Hospital</text>
 </svg>
