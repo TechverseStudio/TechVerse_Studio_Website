@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="TechVerse Studio portfolio — Websites, mobile apps, AI projects, branding, and marketing campaigns with measurable results.">
   <title>Portfolio | TechVerse Studio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=15">
 </head>
 <body>
   <canvas id="particle-canvas" aria-hidden="true"></canvas>
@@ -15,7 +15,7 @@
       <nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html" class="active">Portfolio</a><a href="students.html">Students</a><a href="process.html">Process</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></nav>
       <div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Switch theme"></button><a href="contact.html" class="btn btn-primary btn-sm nav-cta">Start Your Project</a><button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button></div>
     </div>
-    <nav class="mobile-menu"><a href="index.html">Home</a><a href="portfolio.html" class="active">Portfolio</a><a href="students.html">Students</a><a href="contact.html">Contact</a></nav>
+    <nav class="mobile-menu"><a href="index.html">Home</a><a href="portfolio.html" class="active">Portfolio</a><a href="students.html">Students</a><a href="contact.html">Contact</a><a href="contact.html" class="mobile-cta" style="margin-top: 1rem; background: var(--accent-blue); color: white; text-align: center; font-weight: bold;">Start Your Project</a></nav>
   </header>
 
   <main>
@@ -25,7 +25,7 @@
       <div class="verse-container">
         <!-- Center AI Brain -->
         <div class="verse-brain">
-          <video src="assets/videos/portfolio-video.mp4" autoplay loop muted playsinline aria-label="AI Brain Core"></video>
+          <video src="assets/videos/portfolio-replace.mp4" autoplay loop playsinline aria-label="AI Brain Core"></video>
         </div>
 
 
@@ -42,79 +42,102 @@
         <div class="verse-projects">
           <!-- Project 1 -->
           <article class="verse-card project-1">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=375&fit=crop" alt="EduFlow Academy"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&h=600&fit=crop" alt="MedAssist Healthcare Platform"></div>
             <div class="verse-card-content">
-              <span class="verse-category">Website</span>
-              <h3>EduFlow Academy</h3>
-              <p>45% enrollment increase with modern LMS portal.</p>
-              <div class="tech-tags"><span>React</span><span>Node.js</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">Healthcare SaaS</span>
+              <h3>MedAssist Healthcare Platform</h3>
+              <p class="project-desc">A centralized healthcare management platform designed for clinics and hospitals to streamline patient records, appointments, billing, and insurance workflows through a secure cloud-based system.<br><br><strong>Outcome:</strong> Improved patient management and reduced administrative overhead.</p>
+              
             </div>
           </article>
           <!-- Project 2 -->
           <article class="verse-card project-2">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=375&fit=crop" alt="FitTrack Pro"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop" alt="SmartFleet Vehicle Tracking System"></div>
             <div class="verse-card-content">
-              <span class="verse-category">App</span>
-              <h3>FitTrack Pro</h3>
-              <p>10K+ downloads with AI workout plans.</p>
-              <div class="tech-tags"><span>Flutter</span><span>Firebase</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">IoT & Fleet Management</span>
+              <h3>SmartFleet Vehicle Tracking System</h3>
+              <p class="project-desc">A GPS-enabled fleet monitoring solution providing real-time vehicle tracking, route optimization, trip history, and maintenance scheduling for logistics businesses.<br><br><strong>Outcome:</strong> Enhanced fleet visibility and operational efficiency.</p>
+              
             </div>
           </article>
           <!-- Project 3 -->
           <article class="verse-card project-3">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=375&fit=crop" alt="SmartServe AI"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=600&fit=crop" alt="Nexus AI Business Assistant"></div>
             <div class="verse-card-content">
-              <span class="verse-category">AI</span>
-              <h3>SmartServe AI</h3>
-              <p>60% reduction in support tickets.</p>
-              <div class="tech-tags"><span>OpenAI</span><span>Python</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">Artificial Intelligence</span>
+              <h3>Nexus AI Business Assistant</h3>
+              <p class="project-desc">An AI-powered assistant for document intelligence, knowledge retrieval, workflow automation, and business support using Retrieval-Augmented Generation (RAG).<br><br><strong>Outcome:</strong> Accelerated information retrieval and automated repetitive workflows.</p>
+              
             </div>
           </article>
           <!-- Project 4 -->
           <article class="verse-card project-4">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=375&fit=crop" alt="NovaTech Rebrand"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop" alt="Sanjeevani Smart Healthcare Device"></div>
             <div class="verse-card-content">
-              <span class="verse-category">Branding</span>
-              <h3>NovaTech Rebrand</h3>
-              <p>Complete identity refresh for tech startup.</p>
-              <div class="tech-tags"><span>Brand Kit</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">IoT & Healthcare</span>
+              <h3>Sanjeevani Smart Healthcare Device</h3>
+              <p class="project-desc">A wearable healthcare monitoring solution featuring fall detection, vital-sign monitoring, emergency alerts, and GPS-enabled emergency assistance through a companion mobile application.<br><br><strong>Outcome:</strong> Enabled continuous health monitoring and faster emergency response.</p>
+              
             </div>
           </article>
           <!-- Project 5 -->
           <article class="verse-card project-5">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1533750514497-08b2a0d1022e?w=600&h=375&fit=crop" alt="GreenLeaf Campaign"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop" alt="EduCore Learning Management System"></div>
             <div class="verse-card-content">
-              <span class="verse-category">Marketing</span>
-              <h3>GreenLeaf Campaign</h3>
-              <p>3x ROAS on Meta ads campaign.</p>
-              <div class="tech-tags"><span>Meta Ads</span><span>SEO</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">Education Technology</span>
+              <h3>EduCore Learning Management System</h3>
+              <p class="project-desc">A complete learning management platform featuring student enrollment, online assessments, attendance management, course delivery, progress tracking, and administrative dashboards.<br><br><strong>Outcome:</strong> Simplified digital learning and academic administration.</p>
+              
             </div>
           </article>
           <!-- Project 6 -->
           <article class="verse-card project-6">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=375&fit=crop" alt="Meridian Corp"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&h=600&fit=crop" alt="Brew & Bean Coffee House Branding"></div>
             <div class="verse-card-content">
-              <span class="verse-category">Website</span>
-              <h3>Meridian Corp</h3>
-              <p>200+ qualified leads per month.</p>
-              <div class="tech-tags"><span>Next.js</span><span>CRM</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">Branding & Digital Identity</span>
+              <h3>Brew & Bean Coffee House Branding</h3>
+              <p class="project-desc">Developed a complete visual identity for a specialty coffee shop, including logo design, brand color palette, social media creatives, menu design, promotional materials, and a cohesive digital brand presence.<br><br><strong>Outcome:</strong> Established a modern and recognizable brand identity with consistent customer-facing visuals.</p>
+              
             </div>
           </article>
           <!-- Project 7 -->
           <article class="verse-card project-7">
-            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=375&fit=crop" alt="FoodDash Delivery"></div>
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&h=600&fit=crop" alt="DrivePro RTO Training Institute"></div>
             <div class="verse-card-content">
-              <span class="verse-category">App</span>
-              <h3>FoodDash Local</h3>
-              <p>Real-time delivery tracking for 50+ restaurants.</p>
-              <div class="tech-tags"><span>React Native</span><span>Maps API</span></div>
-              <a href="#" class="btn btn-primary btn-sm">View Project</a>
+              <span class="verse-category">Educational Website & Digital Marketing</span>
+              <h3>DrivePro RTO Training Institute</h3>
+              <p class="project-desc">Designed and developed a professional website for an institute that trains students in RTO-related online agent services. The project included course information, admissions, inquiry management, SEO optimization, and local digital marketing support.<br><br><strong>Outcome:</strong> Improved online visibility and streamlined student inquiry management.</p>
+              
+            </div>
+          </article>
+          <!-- Project 8 -->
+          <article class="verse-card project-8">
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop" alt="Sanjeevani Hospital Digital Presence"></div>
+            <div class="verse-card-content">
+              <span class="verse-category">Healthcare Website & Marketing</span>
+              <h3>Sanjeevani Hospital Digital Presence</h3>
+              <p class="project-desc">Built a responsive hospital website showcasing medical departments, doctor profiles, appointment requests, healthcare services, patient information, and contact facilities. Also executed digital branding and awareness campaigns to strengthen the hospital's online presence.<br><br><strong>Outcome:</strong> Enhanced the hospital's professional digital presence and improved patient accessibility.</p>
+              
+            </div>
+          </article>
+          <!-- Project 9 -->
+          <article class="verse-card project-9">
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" alt="Vision Commerce Platform"></div>
+            <div class="verse-card-content">
+              <span class="verse-category">E-Commerce Solutions</span>
+              <h3>Vision Commerce Platform</h3>
+              <p class="project-desc">A scalable e-commerce platform supporting product management, secure payments, inventory management, order tracking, customer accounts, and analytics.<br><br><strong>Outcome:</strong> Delivered a secure and scalable online shopping experience.</p>
+              
+            </div>
+          </article>
+          <!-- Project 10 -->
+          <article class="verse-card project-10">
+            <div class="verse-card-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Insight Analytics Dashboard"></div>
+            <div class="verse-card-content">
+              <span class="verse-category">Business Intelligence</span>
+              <h3>Insight Analytics Dashboard</h3>
+              <p class="project-desc">An interactive analytics dashboard providing real-time KPIs, sales insights, financial reports, customer analytics, and performance visualization for business decision-making.<br><br><strong>Outcome:</strong> Enabled centralized reporting and data-driven operational decisions.</p>
+              
             </div>
           </article>
         </div>
