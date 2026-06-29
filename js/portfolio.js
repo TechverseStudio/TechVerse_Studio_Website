@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   // --- Brain & Robot Audio Logic ---
   // The user clicked from the navbar, so browsers typically allow this cross-page autoplay.
   // Play exactly 1 second after load (which equates to ~1 sec after click depending on load time)
