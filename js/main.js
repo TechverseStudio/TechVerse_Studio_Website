@@ -575,6 +575,84 @@
       nextCard.classList.add('active');
     }, 4000); // Change testimonial every 4 seconds
   }
+  /* Global Media Loader (Lazy loading & Sequential Preloader) */
+  function initMediaLoader() {
+    // 1. Lazy Loading for the current page
+    const mediaElements = document.querySelectorAll('video[data-src], img[data-src]');
+    if ('IntersectionObserver' in window) {
+      const mediaObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            el.src = el.getAttribute('data-src');
+            el.removeAttribute('data-src');
+            
+            if (el.tagName.toLowerCase() === 'video') {
+              el.load();
+              el.play().catch(e => console.log("Video lazy play blocked:", e));
+            }
+            
+            observer.unobserve(el);
+          }
+        });
+      }, { rootMargin: '200px' });
+      
+      mediaElements.forEach(el => mediaObserver.observe(el));
+    } else {
+      mediaElements.forEach(el => {
+        el.src = el.getAttribute('data-src');
+        el.removeAttribute('data-src');
+      });
+    }
+
+    // 2. Sequential Background Preloader
+    const prefetchQueue = [
+      'assets/videos/robot-new.webm',
+      'assets/videos/Web-dev-video.mp4',
+      'assets/videos/android-dev-video.mp4',
+      'assets/videos/ai-solutions-video.mp4',
+      'assets/videos/chatbots-video.mp4',
+      'assets/videos/automation-video.mp4',
+      'assets/videos/branding-video.mp4',
+      'assets/videos/graphic-video.mp4',
+      'assets/videos/animation-video.mp4',
+      'assets/videos/seo-video.mp4',
+      'assets/videos/portfolio-replace.mp4',
+      'assets/videos/about-video.mp4',
+      'assets/images/student-project-1.png',
+      'assets/images/student-project-2.png',
+      'assets/images/student-project-3.png',
+      'assets/images/student-project-4.png',
+      'assets/images/jarvis_hud.png'
+    ];
+
+    function preloadNext(index) {
+      if (index >= prefetchQueue.length) return;
+      
+      const url = prefetchQueue[index];
+      if (url.endsWith('.png') || url.endsWith('.jpg') || url.endsWith('.svg')) {
+        const img = new Image();
+        img.onload = img.onerror = () => preloadNext(index + 1);
+        img.src = url;
+      } else {
+        fetch(url)
+          .then(res => res.blob())
+          .then(() => preloadNext(index + 1))
+          .catch(() => preloadNext(index + 1));
+      }
+    }
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(() => preloadNext(0));
+        } else {
+          preloadNext(0);
+        }
+      }, 2000);
+    });
+  }
+
   /* Init */
   document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
@@ -588,6 +666,7 @@
     initAmbientSystem();
     initRobotInteraction();
     initTestimonials();
+    initMediaLoader();
   });
 })();
 
